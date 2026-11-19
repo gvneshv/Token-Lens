@@ -1,11 +1,11 @@
 # Token Lens
 
-[![Live demo](https://img.shields.io/badge/demo-GitHub%20Pages-4f46e5)](https://gvneshv.github.io/Token-Limit-Predictor/)
+[![Live demo](https://img.shields.io/badge/demo-GitHub%20Pages-4f46e5)](https://gvneshv.github.io/Token-Lens/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A private, static web app that estimates prompt size, likely response range, reasoning overhead, difficulty, and whether a request may be worth splitting.
 
-**Live app:** https://gvneshv.github.io/Token-Limit-Predictor/
+**Live app:** https://gvneshv.github.io/Token-Lens/
 
 ## What it does
 
