@@ -5,6 +5,33 @@ All notable changes to this project are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2026-11-19
+
+### Changed
+
+- Updated model specifications to reflect major provider changes as of 2026-11-19.
+- Replaced OpenAI GPT-6.1 Sol and GPT-6 Astra with GPT-6.2 Sol and GPT-6.2 Astra (improved efficiency and capability).
+- Replaced Claude Fable 5.1 with Claude Fable 5.2 (newest Fable generation with improved performance and lower cost).
+- Replaced Gemini 4 Argon with Gemini 4 family (Hydrogen, Neon, Carbon) - new Gemini 4 generation with multiple tiers.
+- Removed deprecated Mistral Medium 3.5 (retired October 31, 2026).
+- Updated PROFILES_LAST_VERIFIED date from 2026-10-17 to 2026-11-19.
+
+### Added
+
+- Added Gemini 4 Hydrogen (high-speed, cutting-edge intelligence for everyday workflows).
+- Added Gemini 4 Neon (frontier-level intelligence with fast task completion).
+- Added Gemini 4 Carbon (strongest reasoning model for complex software engineering and cybersecurity).
+
+### Removed
+
+- Removed Mistral Medium 3.5 (deprecated, alternative is Mistral Large 4).
+
+### Fixed
+
+- Increased profile count from 18 to 19 (added 3 Gemini 4 models, removed 1 Mistral model, and 1 Anthropic model replacement).
+- Updated HTML fallback model selector to match new profile lineup.
+- Updated verification date in static HTML content.
+
 ## [1.0.3] - 2026-10-17
 
 ### Changed
@@ -122,6 +149,7 @@ and maintain it.
 - Responsive light/dark interface and deterministic prediction engine.
 - Unit tests and local run documentation.
 
+[1.0.4]: https://github.com/gvneshv/Token-Limit-Predictor/releases/tag/v1.0.4
 [1.0.3]: https://github.com/gvneshv/Token-Limit-Predictor/releases/tag/v1.0.3
 [1.0.2]: https://github.com/gvneshv/Token-Limit-Predictor/releases/tag/v1.0.2
 [1.0.1]: https://github.com/gvneshv/Token-Limit-Predictor/releases/tag/v1.0.1

@@ -1,9 +1,9 @@
 // Public model characteristics used by the local-only estimation heuristic.
 // Context window and max output figures are drawn from each provider's own model docs
-// (linked in the "Profile sources" list in index.html) and were last cross-checked 2026-10-17.
+// (linked in the "Profile sources" list in index.html) and were last cross-checked 2026-11-19.
 // Providers revise these figures often - several changed twice in the months prior to this check
 // - so treat exact numbers as approximate and re-verify against the source link before relying on them for capacity planning.
-const PROFILES_LAST_VERIFIED = "2026-10-17";
+const PROFILES_LAST_VERIFIED = "2026-11-19";
 
 const profiles = [
   {
@@ -19,8 +19,8 @@ const profiles = [
   },
   {
     group: "OpenAI",
-    id: "gpt-6-1-sol",
-    name: "GPT-6.1 Sol",
+    id: "gpt-6-2-sol",
+    name: "GPT-6.2 Sol",
     context: 1050000,
     output: 128000,
     responseFactor: 1.05,
@@ -30,8 +30,8 @@ const profiles = [
   },
   {
     group: "OpenAI",
-    id: "gpt-6-astra",
-    name: "GPT-6 Astra",
+    id: "gpt-6-2-astra",
+    name: "GPT-6.2 Astra",
     context: 1050000,
     output: 128000,
     responseFactor: 1.25,
@@ -74,14 +74,14 @@ const profiles = [
   },
   {
     group: "Anthropic",
-    id: "claude-fable-5-1",
-    name: "Claude Fable 5.1",
+    id: "claude-fable-5-2",
+    name: "Claude Fable 5.2",
     context: 1000000,
     output: 128000,
-    responseFactor: 1.45,
-    reasoningFactor: 1.9,
-    budget: 60000,
-    source: "https://platform.claude.com/docs/en/models/fable-5-1/overview",
+    responseFactor: 1.5,
+    reasoningFactor: 1.95,
+    budget: 62000,
+    source: "https://platform.claude.com/docs/en/models/fable-5-2/overview",
   },
   {
     group: "Google",
@@ -119,14 +119,36 @@ const profiles = [
   },
   {
     group: "Google",
-    id: "gemini-4-argon",
-    name: "Gemini 4 Argon",
+    id: "gemini-4-hydrogen",
+    name: "Gemini 4 Hydrogen",
     context: 1000000,
     output: 1000000,
-    responseFactor: 1.5,
-    reasoningFactor: 1.8,
-    budget: 65000,
-    source: "https://ai.google.dev/gemini-api/docs/models/gemini-4-argon",
+    responseFactor: 1.3,
+    reasoningFactor: 1.6,
+    budget: 58000,
+    source: "https://ai.google.dev/gemini-api/docs/models/gemini-4-hydrogen",
+  },
+  {
+    group: "Google",
+    id: "gemini-4-neon",
+    name: "Gemini 4 Neon",
+    context: 1000000,
+    output: 1000000,
+    responseFactor: 1.4,
+    reasoningFactor: 1.7,
+    budget: 62000,
+    source: "https://ai.google.dev/gemini-api/docs/models/gemini-4-neon",
+  },
+  {
+    group: "Google",
+    id: "gemini-4-carbon",
+    name: "Gemini 4 Carbon",
+    context: 1000000,
+    output: 1000000,
+    responseFactor: 1.55,
+    reasoningFactor: 1.85,
+    budget: 68000,
+    source: "https://ai.google.dev/gemini-api/docs/models/gemini-4-carbon",
   },
   {
     group: "Groq",
@@ -171,17 +193,6 @@ const profiles = [
     reasoningFactor: 1.6,
     budget: 48000,
     source: "https://docs.mistral.ai/models/mistral-large-4",
-  },
-  {
-    group: "Mistral",
-    id: "mistral-medium-3-5",
-    name: "Mistral Medium 3.5",
-    context: 1000000,
-    output: 128000,
-    responseFactor: 1.2,
-    reasoningFactor: 1.4,
-    budget: 42000,
-    source: "https://docs.mistral.ai/models",
   },
   {
     group: "Cohere",

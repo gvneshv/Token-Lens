@@ -8,7 +8,7 @@
       content="A private, browser-only estimator for AI prompt and response size."
     />
     <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="author" content="Token Limit Predictor contributors" />
+    <meta name="author" content="Token Lens contributors" />
     <meta name="theme-color" content="#f5f7fb" />
     <link
       rel="canonical"
@@ -46,7 +46,7 @@
     <link rel="manifest" href="site.webmanifest" />
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="assets/favicon.svg" />
-    <title>Token Limit Predictor</title>
+    <title>Token Lens</title>
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
   <body>
@@ -54,7 +54,7 @@
     <main class="shell">
       <header class="page-header">
         <div class="header-row">
-          <a class="brand" href="./" aria-label="Token Limit Predictor home"
+          <a class="brand" href="./" aria-label="Token Lens home"
             ><span>✦</span> Token Lens</a
           >
           <!-- These browser-only preferences are enhanced and persisted by assets/app.js. -->
@@ -138,14 +138,14 @@
             <select id="model" name="model">
               <optgroup label="OpenAI">
                 <option value="gpt-6-luna">GPT-6 Luna</option>
-                <option value="gpt-6-1-sol">GPT-6.1 Sol</option>
-                <option value="gpt-6-astra">GPT-6 Astra</option>
+                <option value="gpt-6-2-sol">GPT-6.2 Sol</option>
+                <option value="gpt-6-2-astra">GPT-6.2 Astra</option>
               </optgroup>
               <optgroup label="Anthropic">
                 <option value="claude-haiku-5-5">Claude Haiku 5.5</option>
                 <option value="claude-sonnet-5-5">Claude Sonnet 5.5</option>
                 <option value="claude-opus-5-5">Claude Opus 5.5</option>
-                <option value="claude-fable-5-1">Claude Fable 5.1</option>
+                <option value="claude-fable-5-2">Claude Fable 5.2</option>
               </optgroup>
               <optgroup label="Google">
                 <option value="gemini-3-1-flash-lite">
@@ -153,7 +153,9 @@
                 </option>
                 <option value="gemini-3-6-flash">Gemini 3.6 Flash</option>
                 <option value="gemini-3-8-flash">Gemini 3.8 Flash</option>
-                <option value="gemini-4-argon">Gemini 4 Argon</option>
+                <option value="gemini-4-hydrogen">Gemini 4 Hydrogen</option>
+                <option value="gemini-4-neon">Gemini 4 Neon</option>
+                <option value="gemini-4-carbon">Gemini 4 Carbon</option>
               </optgroup>
               <optgroup label="Groq">
                 <option value="qwen3-8-27b-groq">Qwen3.8 27B on Groq</option>
@@ -167,7 +169,6 @@
               </optgroup>
               <optgroup label="Mistral">
                 <option value="mistral-large-4">Mistral Large 4</option>
-                <option value="mistral-medium-3-5">Mistral Medium 3.5</option>
               </optgroup>
               <optgroup label="Cohere">
                 <option value="command-a-plus">Cohere Command A+</option>
@@ -294,7 +295,7 @@
           class="specs-freshness"
           data-i18n="specsFreshness"
         >
-          Model specs last checked 2026-10-17. Providers revise context and
+          Model specs last checked 2026-11-19. Providers revise context and
           output limits often - verify against the linked source before relying
           on exact numbers.
         </p>
